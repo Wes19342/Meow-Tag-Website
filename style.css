@@ -1,4 +1,18 @@
-/* Reset styling */
+/* Banner styling */
+.banner {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    overflow: hidden;
+    border-bottom: 3px dotted #b89056; /* Dotted border to match theme */
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the banner area without distortion */
+}
+
+/* Rest of the styling */
 * {
     margin: 0;
     padding: 0;
@@ -6,39 +20,37 @@
     font-family: Arial, sans-serif;
 }
 
-/* Body styling - soft yellow-beige background */
 body {
-    background-color: #f7e9c3; /* Soft yellow-beige */
+    background-color: #f7e9c3;
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 20px;
+    flex-direction: column;
 }
 
-/* Main container styling with a dotted border */
 .container {
     max-width: 800px;
     width: 100%;
     text-align: center;
-    background-color: #fdf4e3; /* Light beige background for content */
+    background-color: #fdf4e3;
     padding: 20px;
-    border: 3px dotted #b89056; /* Light brown dotted border */
+    border: 3px dotted #b89056;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
-/* Header styling */
 h1 {
-    color: #b89056; /* Light brown */
+    color: #b89056;
     margin-bottom: 20px;
 }
 
-/* Navigation styling */
 nav ul {
     list-style: none;
     padding: 0;
-    margin-bottom: 20px; /* Add some spacing */
+    margin-bottom: 20px;
 }
 
 nav ul li {
@@ -48,57 +60,6 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #b89056; /* Light brown links */
+    color: #b89056;
     font-weight: bold;
-}
-
-/* Download buttons with consistent color theme */
-.download-buttons {
-    margin-top: 20px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    text-decoration: none;
-    color: white;
-    background-color: #b89056; /* Light brown button color */
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #a37844; /* Darker brown on hover */
-}
-
-/* Gallery styling with dotted borders around images */
-.gallery {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.gallery img {
-    width: 30%;
-    border-radius: 5px;
-    border: 2px dotted #b89056; /* Light brown dotted border for images */
-}
-
-/* Moderator list styling with dotted background and consistent color */
-.moderators {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
-    background-color: #fdf4e3; /* Light beige background for list */
-    padding: 10px;
-    border: 2px dotted #b89056; /* Dotted border around the list */
-    border-radius: 5px;
-}
-
-.moderators li {
-    margin: 10px 0;
-    font-size: 1.1em;
-    color: #b89056; /* Light brown text color */
 }
