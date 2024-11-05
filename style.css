@@ -22,6 +22,11 @@
     /* Black outline effect */
 }
 
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the banner area without distortion */
+}
 
 /* Rest of the styling */
 * {
